@@ -1,0 +1,21 @@
+show databases;
+create database ai_lavanya;
+
+use ai_lavanya;
+create table lavanya_table (s_no int not null primary key,name varchar(20)not null,age int, phone_no long);
+show tables;
+insert into lavanya_table (s_no,name,age,phone_no) value (1,'Archana',18,'7904460924'),(2,'Divya',19,'9944970418'),(3,'Deepa',15,'9597751933');
+show tables;
+select * from lavanya_table;
+select name from lavanya_table;
+truncate lavanya_table;
+alter table lavanya_table add column address varchar(255);
+insert into lavanya_table (s_no,name,age,phone_no) value (1,'Archana',18,'7904460924'),(2,'Divya',19,'9944970418'),(3,'Deepa',15,'9597751933');
+select * from lavanya_table where age<18;
+insert into lavanya_table (address) value ('Trichy');
+select * from lavanya_table where name like 'D%';
+select * from lavanya_table order by name ASC;
+select * from lavanya_table order by name DESC;
+select * from lavanya_table where age<=15 and name like 'D%';
+insert into lavanya_table (s_no,name,age,phone_no,address) value (4,'Nithya',14,'9387548356','VNR');
+delete from lavanya_table where address;
