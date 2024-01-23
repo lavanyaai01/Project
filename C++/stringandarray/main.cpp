@@ -24,7 +24,7 @@ int main()
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class stringclass {
 public:
@@ -63,4 +63,27 @@ public:
     stringclass sc;
     stringclass sc1 ("Lavanya"," Aravind");
     return 0;
+    }*/
+
+
+
+    #include<iostream>
+    using namespace std;
+    class functionoverloaddemo
+    {
+    public:
+        int welcomestring ()
+        {
+            string name;
+            cout << "Enter your name:";
+            cin >> name;
+            cout << "Hi " << name;
+        }
+
+    };
+    int main()
+    {
+        functionoverloaddemo fod;
+        fod. welcomestring();
+        return 0;
     }
