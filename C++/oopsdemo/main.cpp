@@ -53,10 +53,39 @@ int main ()
     firstname.push_back ('pp');
     cout <<firstname << endl;
     return 0;
-}*/
+}
 
 fflush(stdin);
 cout << fullname.length() << endl;
 cout << fullname.size ()  << endl;
 return 0;
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+namespace number1
+{
+    int x=5;
+    void sample ()
+    {
+        cout << "  this is sample of number1" << "\n";
+    }
+}
+namespace number2
+{
+    int x=10;
+    void sample ()
+    {
+        cout << "  this is sample of number2";
+    }
+}
+int main ()
+{
+    cout << number1::x;
+    number1::sample();
+    cout << number2::x;
+    number2::sample ();
+    return 0;
 }
