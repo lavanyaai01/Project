@@ -1,0 +1,8 @@
+print("Enter the Uppercase value:")
+x=input()
+y=x.lower()
+print("The lowercase value is:",y)
+print("Enter the lowercase value:")
+x=input()
+y=x.upper()
+print("The Uppercase value is:",y)
