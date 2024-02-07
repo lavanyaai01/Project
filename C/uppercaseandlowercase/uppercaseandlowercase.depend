@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1707197311 source:c:\users\lavanyaai01\desktop\ai batch01\project\c\uppercaseandlowercase\main.c
+	<stdio.h>
+	<stdlib.h>
+
