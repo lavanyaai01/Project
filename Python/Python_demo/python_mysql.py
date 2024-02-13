@@ -15,3 +15,8 @@ result.execute("Select * from sys_info")
 result_show=result.fetchall()
 for x in result_show:
     print(x)
+result.execute("delete from sys_info where sno=4")
+result.execute("select * from sys_info")
+result_show=result.fetchall()
+for x in result_show:
+    print(x)
