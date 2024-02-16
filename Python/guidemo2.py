@@ -1,0 +1,18 @@
+from tkinter import *
+login = Tk ()
+login.title ("Sign In")
+login.geometry ("500x500+500+100")
+
+labeltitle=Label(login,text="User Name")
+labeltitle.grid(row=1,column=10,padx=40,pady=40)
+Entry1=Entry(login,width=50)
+Entry1.grid(row=1,column=20)
+labeltitle1=Label(login,text="Password")
+labeltitle1.grid(row=2,column=10,padx=30,pady=30)
+Entry2=Entry(login,width=50)
+Entry2.grid(row=2,column=20)
+clickbutton=Button(login,text="OK")
+clickbutton.grid(row=3,column=40)
+clickbutton1=Button(login,text="Cancel")
+clickbutton1.grid(row=3,column=50,padx=40,pady=40)
+login.mainloop ()
