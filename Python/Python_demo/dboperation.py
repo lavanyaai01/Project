@@ -12,15 +12,15 @@ def MyDBConnection ():
     )
     return dbcon
 def insertvalue ():
-    n=name.get()
-    a=tamil.get ()
-    b=english.get ()
-    c=maths.get ()
-    d=science.get ()
-    e=social.get ()
+    n=name1.get()
+    a=tamil1.get ()
+    b=english1.get ()
+    c=maths1.get ()
+    d=science1.get ()
+    e=social1.get ()
     e_con=MyDBConnection()
     result=e_con.cursor ()
-    statement="Insert into student_marklist(S_No,Student_Name,Tamil,English,Maths,Science,Social)values (%s,%s)";
+    statement="Insert into student_marklist(Student_Name,Tamil,English,Maths,Science,Social)values (%s,%s,%s,%s,%s,%s);"
     valuepass=(n,a,b,c,d,e)
     result.execute(statement,valuepass)
     e_con.commit ()
