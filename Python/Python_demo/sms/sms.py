@@ -6,18 +6,22 @@ win=tk.Tk ()
 win.title ("Student Management System")
 win.state("zoomed")
 win.geometry("600x600")
-def exitwindow ():
-    win.destroy ()
-def createTitle ():
-    titleimageframe=tk. Frame(win,width=600,height=400,bg="black")
-    titleimageframe.pack ()
-    imgdir=os.path.join(os.path.dirname(__file__),'img')
-    print("Path Name is:" + imgdir)
-    imagelocation=os.path.join(imgdir,'banner1.gif')
-    print("image location is:" + imagelocation)
-    titleimage=tk.PhotoImage("titleimg",file=os.path.join(imgdir,"banner1.gif"))
-    lbltitleimage=tk.Label(titleimageframe,image=titleimage)
-    lbltitleimage.pack()
+
+
+
+imgdir=os.path.join((os.path.join(os.path.dirname(__file__),'img')),"image.gif")
+getTitleImage=PhotoImage('titleimage',file=imgdir)
+
+
+
+titleImageFrame=Frame(win, bg="white")#, height=200)
+titleImageFrame.pack(padx=10,fill="both")
+
+lblDisplayTitleImage=Label(titleImageFrame,image=getTitleImage).pack()
+
+
+
+
 def createTab():
     tabwelcome=ttk.Notebook(tablist,width=win.winfo_screenwidth(),height=win.winfo_screenheight())
     tabwelcome.pack(fill="both",expand=True)
